@@ -1,0 +1,108 @@
+// Q1
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(a>b&&a>c){
+        cout<<"The largest number is: "<<a;
+    }
+    else if(b>a&&b>c){
+        cout<<"The largest number is: "<<b;
+    }
+    else{
+        cout<<"The largest number is: "<<c;
+    }
+    return 0;
+}
+
+//Q2
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    cin>>a;
+    char ch;
+    if(a<=100 && a>=90){
+        ch = 'A';
+    }
+    else if(a<=89 && a>=80){
+        ch = 'B';
+    }
+    else if(a<=79 && a>=70){
+        ch = 'C';
+    }
+    else if(a<=69 && a>=60){
+        ch = 'D';
+    }
+    else{
+        ch = 'F';
+    }
+    cout<<"Grade: "<<ch;
+    return 0;
+}
+
+// Q3
+#include<iostream>
+#include<string>
+using namespace std;
+int main() {
+    int a;
+    cin>>a;
+    string str;
+    
+    switch(a){
+        case 1:
+        str = "January";
+        break;
+        
+        case 2:
+        str = "Febuary";
+        break;
+        
+        case 3:
+        str = "March";
+        break;
+        
+        case 4:
+        str = "April";
+        break;
+        
+        case 5:
+        str = "May";
+        break;
+        
+        case 6:
+        str = "June";
+        break;
+        
+        case 7:
+        str = "July";
+        break;
+        
+        case 8:
+        str = "August";
+        break;
+        
+        case 9:
+        str = "september";
+        break;
+        
+        case 10:
+        str = "October";
+        break;
+        
+        case 11:
+        str = "November";
+        break;
+        
+        case 12:
+        str = "December";
+        break;
+        
+        default:
+        str = "Invalid";
+    }
+    cout<<str;
+    return 0;
+}
