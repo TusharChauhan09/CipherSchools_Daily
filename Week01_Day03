@@ -1,0 +1,45 @@
+// Q-1
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    int  sum=0;
+    for(int i=1;i<=n;i++){
+        sum +=i;
+    }
+    cout<<"The sum of the first "<<n<<" natural numbers is: "<<sum;
+    return 0;
+}
+
+//Q-2
+#include <iostream>
+using namespace std;
+int main() {
+    int x;
+    cout<<"Enter a number: ";
+    cin>>x;
+    int n=x;
+    int fact =1;
+    while(n>0){
+        fact *= n;  
+        n--;
+    }
+    cout<<"The factorial of "<<x<<" is: "<<fact;
+    return 0;
+}
+
+// Q-3
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    cout<<"Multiplication table of "<<n<<" : \n";
+    for(int i=1;i<=10;i++){
+        cout<<n<<" X "<<i<<" = "<<n*i<<"\n"; 
+    }
+    return 0;
+}
